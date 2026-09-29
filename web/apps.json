@@ -1,0 +1,11 @@
+[
+  {
+    "id": "rc-servicos",
+    "name": "RC Serviços",
+    "category": "Serviços de climatização",
+    "description": "Atendimentos, clientes, equipamentos, ordens de serviço, PMOC e gestão financeira.",
+    "href": "apps/rc-servicos/web/index.html",
+    "image": "web/assets/rc-logo.png",
+    "status": "Disponível"
+  }
+]
