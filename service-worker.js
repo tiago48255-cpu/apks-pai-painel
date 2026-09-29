@@ -1,9 +1,9 @@
-const CACHE = 'meus-negocios-v1';
+const CACHE = 'meus-negocios-v2';
 const ASSETS = [
   'index.html', 'web/style.css', 'web/panel.js', 'web/apps.json', 'web/manifest.webmanifest',
   'web/assets/icon.svg', 'web/assets/icon-192.png', 'web/assets/icon-512.png', 'web/assets/rc-logo.png',
   'apps/rc-servicos/web/index.html', 'apps/rc-servicos/web/app.css',
-  'apps/rc-servicos/web/app.js', 'apps/rc-servicos/web/improvements.js',
+  'apps/rc-servicos/web/brand-assets.js', 'apps/rc-servicos/web/app.js', 'apps/rc-servicos/web/improvements.js',
   'apps/rc-servicos/web/assets/logo.jpg', 'apps/rc-servicos/web/assets/logo.png'
 ];
 self.addEventListener('install', event => {
