@@ -1,10 +1,12 @@
-const CACHE = 'meus-negocios-v4';
+const CACHE = 'meus-negocios-v5';
 const ASSETS = [
-  'index.html?v=4', 'web/style.css?v=4', 'web/panel.js?v=4', 'web/apps.json?v=4', 'web/manifest.webmanifest?v=4',
+  'index.html?v=5', 'web/style.css?v=5', 'web/apps-data.js?v=5', 'web/panel.js?v=5', 'web/manifest.webmanifest?v=5',
   'web/assets/icon.svg', 'web/assets/icon-192.png', 'web/assets/icon-512.png', 'web/assets/rc-logo.png',
-  'apps/rc-servicos/web/index.html', 'apps/rc-servicos/web/app.css?v=4',
-  'apps/rc-servicos/web/brand-assets.js?v=4', 'apps/rc-servicos/web/app.js?v=4', 'apps/rc-servicos/web/improvements.js?v=4',
-  'apps/rc-servicos/web/assets/logo.jpg', 'apps/rc-servicos/web/assets/logo.png'
+  'apps/rc-servicos/web/index.html', 'apps/rc-servicos/web/app.css?v=5',
+  'apps/rc-servicos/web/brand-assets.js?v=5', 'apps/rc-servicos/web/app.js?v=5', 'apps/rc-servicos/web/improvements.js?v=5',
+  'apps/rc-servicos/web/manifest.webmanifest?v=5',
+  'apps/rc-servicos/web/assets/logo.jpg', 'apps/rc-servicos/web/assets/logo.png',
+  'apps/rc-servicos/web/assets/icon-192.png', 'apps/rc-servicos/web/assets/icon-512.png'
 ];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(ASSETS)).then(() => self.skipWaiting()));
