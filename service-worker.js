@@ -1,8 +1,8 @@
-const CACHE = 'meus-negocios-v5';
+const CACHE = 'meus-negocios-v6';
 const ASSETS = [
   'index.html?v=5', 'web/style.css?v=5', 'web/apps-data.js?v=5', 'web/panel.js?v=5', 'web/manifest.webmanifest?v=5',
   'web/assets/icon.svg', 'web/assets/icon-192.png', 'web/assets/icon-512.png', 'web/assets/rc-logo.png',
-  'apps/rc-servicos/web/index.html', 'apps/rc-servicos/web/app.css?v=5',
+  'apps/rc-servicos/web/index.html', 'apps/rc-servicos/web/app.css?v=6',
   'apps/rc-servicos/web/brand-assets.js?v=5', 'apps/rc-servicos/web/app.js?v=5', 'apps/rc-servicos/web/improvements.js?v=5',
   'apps/rc-servicos/web/manifest.webmanifest?v=5',
   'apps/rc-servicos/web/assets/logo.jpg', 'apps/rc-servicos/web/assets/logo.png',

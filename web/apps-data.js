@@ -8,6 +8,6 @@ window.MAZY_APPS = [
     image: 'web/assets/rc-logo.png',
     status: 'Disponível',
     fileHref: 'downloads/RC-Servicos-Offline.html',
-    apkHref: 'https://github.com/tiago48255-cpu/apks-pai-painel/releases/download/rc-servicos-v1.1.0/RC-Servicos-v1.1.0-debug.apk'
+    apkHref: 'https://github.com/tiago48255-cpu/apks-pai-painel/releases/download/rc-servicos-v1.1.1/RC-Servicos-v1.1.1-debug.apk'
   }
 ];
