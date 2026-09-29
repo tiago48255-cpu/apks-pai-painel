@@ -14,10 +14,15 @@ async function exportData() {
   if (!db) throw new Error('Banco de dados ainda não está disponível.');
   const data = { format: 'rc-servicos-backup', version: 5, exportedAt: new Date().toISOString(), empresa: getEmpresa(), diagnosticos: rcDiagHistorico() };
   for (const name of RC_BACKUP_STORES) data[name] = await all(name);
+  const filename = 'rc-servicos-backup-' + new Date().toISOString().slice(0, 10) + '.json';
+  if (window.RCAndroid?.saveBackup) {
+    window.RCAndroid.saveBackup(JSON.stringify(data), filename);
+    return;
+  }
   const url = URL.createObjectURL(new Blob([JSON.stringify(data)], { type: 'application/json' }));
   const link = document.createElement('a');
   link.href = url;
-  link.download = 'rc-servicos-backup-' + new Date().toISOString().slice(0, 10) + '.json';
+  link.download = filename;
   link.click();
   setTimeout(() => URL.revokeObjectURL(url), 60000);
 }

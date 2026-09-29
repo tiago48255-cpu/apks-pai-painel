@@ -1,4 +1,4 @@
-const CACHE = 'meus-negocios-v2';
+const CACHE = 'meus-negocios-v3';
 const ASSETS = [
   'index.html', 'web/style.css', 'web/panel.js', 'web/apps.json', 'web/manifest.webmanifest',
   'web/assets/icon.svg', 'web/assets/icon-192.png', 'web/assets/icon-512.png', 'web/assets/rc-logo.png',

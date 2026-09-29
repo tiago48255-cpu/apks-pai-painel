@@ -12,6 +12,7 @@ async function loadApps() {
       <div class="card-top"><div class="business-icon"><img src="${escapeHtml(item.image)}" alt=""></div><span class="status"><i></i>${escapeHtml(item.status)}</span></div>
       <span class="category">${escapeHtml(item.category)}</span><h3>${escapeHtml(item.name)}</h3><p>${escapeHtml(item.description)}</p>
       <a class="open-link" href="${escapeHtml(item.href)}" aria-label="Abrir ${escapeHtml(item.name)}">Abrir aplicativo <span aria-hidden="true">↗</span></a>
+      ${item.apkHref ? `<a class="apk-link" href="${escapeHtml(item.apkHref)}" aria-label="Baixar APK de ${escapeHtml(item.name)}">Baixar APK para Android ↓</a>` : ''}
     </article>`).join('');
   } catch (error) {
     list.innerHTML = '<p class="error">Não foi possível carregar os aplicativos. Recarregue a página.</p>';
