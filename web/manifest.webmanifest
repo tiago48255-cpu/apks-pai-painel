@@ -2,7 +2,7 @@
   "name": "Meus Negócios",
   "short_name": "Negócios",
   "description": "Painel dos aplicativos de negócios",
-  "start_url": "../index.html",
+  "start_url": "../index.html?v=4",
   "scope": "../",
   "display": "standalone",
   "background_color": "#f5f7fa",

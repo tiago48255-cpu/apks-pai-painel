@@ -4,7 +4,7 @@ const escapeHtml = value => String(value ?? '').replace(/[&<>"']/g, char => ({'&
 
 async function loadApps() {
   try {
-    const response = await fetch('web/apps.json');
+    const response = await fetch('web/apps.json?v=4');
     if (!response.ok) throw new Error('Catálogo indisponível');
     const apps = await response.json();
     count.textContent = `${apps.length} ${apps.length === 1 ? 'negócio' : 'negócios'}`;
